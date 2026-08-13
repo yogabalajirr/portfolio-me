@@ -10,7 +10,7 @@ I'm a Computer Science graduate who writes PRDs, prioritizes ruthlessly, and car
 
 ### 🥗 Live Product: WeeFit
 A social, gamified calorie & nutrition tracker with an Indian-cuisine-heavy food database, a points-and-streaks retention loop, and offline-first architecture — built and shipped solo, end to end.
-- **Live app:** [weefit.online](https://weefit.online)
+- **Live app:** [weefit.online]([https://weefit.online](https://weefits-ozzz.vercel.app/dashboard))
 - **PRD:** [WeeFit Product Requirements Document](https://yogabalaji-portfolio.vercel.app/PRDs/WeeFit-PRD.md)
 - **Case study:** [Offline-First Architecture for WeeFit](https://yogabalaji-portfolio.vercel.app/WeeFit_Offline_First_Case_Study.pdf)
 
