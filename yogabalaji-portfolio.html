@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yogabalaji R R — Product Manager</title>
+<meta name="description" content="Portfolio of Yogabalaji R R — aspiring Product Manager who builds and ships. Creator of WeeFit (weefit.online), PRD writer, data-informed strategist.">
+<meta name="theme-color" content="#06141B">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23CCD0CF'/><text x='50' y='68' font-size='52' font-family='Georgia,serif' font-weight='bold' text-anchor='middle' fill='%2306141B'>Y</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yogabalaji R R — Product Manager">
+<meta property="og:description" content="Aspiring Product Manager who builds and ships. Creator of WeeFit — live at weefit.online. PRDs, case studies, and data-informed product work.">
+<meta property="og:url" content="https://yogabalaji-portfolio.vercel.app">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Yogabalaji R R — Product Manager">
+<meta name="twitter:description" content="Aspiring Product Manager who builds and ships. Creator of WeeFit — live at weefit.online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#06141B;
+    --bg-raised:#11212D;
+    --card:rgba(37,55,69,.45);
+    --line:rgba(74,92,106,.55);
+    --accent:#CCD0CF;
+    --accent-soft:#CCD0CF;
+    --accent-deep:#9BA8AB;
+    --accent-glow:rgba(155,168,171,.28);
+    --on-accent:#06141B;
+    --text:#CCD0CF;
+    --muted:#9BA8AB;
+    --radius:16px;
+    --maxw:1080px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  /* The hero orbs are 620px wide and deliberately bleed past the edge.
+     overflow-x on <body> alone does not reliably contain them — the page
+     ends up 180px wider than the screen on phones, which both allows a
+     sideways pan and stops long headings from wrapping. Clip on both
+     elements; `clip` where supported, since it never creates a scroll
+     container the way `hidden` can. */
+  html{scroll-padding-top:90px;overflow-x:hidden;max-width:100%}
+  ::-webkit-scrollbar{width:11px}
+  ::-webkit-scrollbar-track{background:var(--bg)}
+  ::-webkit-scrollbar-thumb{background:rgba(155,168,171,.22);border-radius:99px;border:3px solid var(--bg)}
+  ::-webkit-scrollbar-thumb:hover{background:rgba(155,168,171,.5)}
+  @media (prefers-reduced-motion: no-preference){
+    html{scroll-behavior:smooth}
+  }
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',system-ui,sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+    max-width:100%;
+  }
+  @supports (overflow:clip){
+    html,body{overflow-x:clip}
+  }
+  h1,h2,h3{font-family:'Syne',sans-serif;line-height:1.12;letter-spacing:-.01em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%}
+  ::selection{background:var(--accent);color:var(--on-accent)}
+
+  a:focus-visible,button:focus-visible{
+    outline:2px solid var(--accent-soft);
+    outline-offset:3px;
+    border-radius:6px;
+  }
+
+  /* .hero is a flex container, so this .wrap is a flex item. Flex items
+     default to min-width:auto and refuse to shrink below their min-content
+     width — the long h1 then forces the column wider than the screen and the
+     name gets clipped on phones. min-width:0 lets it shrink and wrap. */
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;min-width:0;width:100%}
+  section{padding:110px 0}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;
+    font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--accent-soft);margin-bottom:18px;
+  }
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);border-radius:2px}
+  .section-title{font-size:clamp(30px,4.5vw,44px);font-weight:800;margin-bottom:14px}
+  .section-sub{color:var(--muted);max-width:560px;margin-bottom:48px}
+
+  /* ---------- Nav ---------- */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    background:rgba(6,20,27,.62);
+    backdrop-filter:blur(16px) saturate(1.4);
+    -webkit-backdrop-filter:blur(16px) saturate(1.4);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:var(--maxw);margin:0 auto;padding:0 24px;
+    height:66px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .logo{font-family:'Syne',sans-serif;font-weight:800;font-size:19px;white-space:nowrap}
+  .logo span{color:var(--accent-soft)}
+  .nav-links{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+  .nav-links::-webkit-scrollbar{display:none}
+  .nav-links a{
+    font-size:14px;font-weight:500;color:var(--muted);
+    padding:8px 13px;border-radius:999px;white-space:nowrap;
+    transition:color .2s,background .2s;
+  }
+  .nav-links a:hover{color:var(--text);background:rgba(155,168,171,.14)}
+  .nav-cta{
+    font-size:14px;font-weight:600;color:var(--on-accent);white-space:nowrap;
+    background:var(--accent);padding:9px 18px;border-radius:999px;
+    box-shadow:0 0 22px var(--accent-glow);
+    transition:transform .2s,box-shadow .2s;
+  }
+  .nav-cta:hover{transform:translateY(-1px);box-shadow:0 0 32px var(--accent-glow)}
+  @media (max-width:640px){.nav-cta{display:none}}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;min-height:100svh;
+    display:flex;align-items:center;
+    padding:140px 0 90px;
+    isolation:isolate;
+  }
+  .orb{
+    position:absolute;z-index:-1;
+    width:620px;height:620px;border-radius:50%;
+    top:-160px;right:-180px;
+    background:radial-gradient(circle at center, rgba(155,168,171,.30), rgba(155,168,171,.24) 38%, rgba(74,92,106,.16) 58%, transparent 72%);
+    filter:blur(40px);
+  }
+  .orb.small{
+    width:340px;height:340px;top:auto;right:auto;bottom:-120px;left:-140px;
+    background:radial-gradient(circle at center, rgba(155,168,171,.22), transparent 70%);
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .orb{animation:pulse 7s ease-in-out infinite}
+    .orb.small{animation-duration:9s;animation-delay:1.5s}
+    @keyframes pulse{
+      0%,100%{transform:scale(1);opacity:.85}
+      50%{transform:scale(1.12);opacity:1}
+    }
+  }
+  .hero-grid{
+    position:absolute;inset:0;z-index:-2;
+    background-image:radial-gradient(rgba(155,168,171,.09) 1px, transparent 1px);
+    background-size:34px 34px;
+    mask-image:radial-gradient(ellipse 75% 65% at 50% 35%, #000 30%, transparent 75%);
+    -webkit-mask-image:radial-gradient(ellipse 75% 65% at 50% 35%, #000 30%, transparent 75%);
+  }
+  .hero h1{
+    font-size:clamp(42px,7.5vw,82px);font-weight:800;margin-bottom:14px;
+  }
+  .hero h1 .accent{
+    background:linear-gradient(100deg,#9BA8AB,#CCD0CF);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .type-line{
+    font-family:'Syne',sans-serif;font-weight:700;
+    font-size:clamp(19px,2.8vw,28px);
+    min-height:1.5em;margin-bottom:24px;color:var(--text);
+  }
+  .caret{
+    display:inline-block;width:3px;height:1em;background:var(--accent-soft);
+    vertical-align:-0.12em;margin-left:3px;border-radius:2px;
+  }
+  @media (prefers-reduced-motion: no-preference){
+    .caret{animation:blink 1s steps(1) infinite}
+    @keyframes blink{50%{opacity:0}}
+  }
+  .hero p.bio{color:var(--muted);max-width:620px;font-size:17px;margin-bottom:36px}
+  .hero p.bio strong{color:var(--text);font-weight:600}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:54px}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:15px;font-weight:600;padding:13px 26px;border-radius:999px;
+    transition:transform .2s,box-shadow .2s,background .2s,border-color .2s;
+  }
+  .btn-primary{background:var(--accent);color:var(--on-accent);box-shadow:0 0 26px var(--accent-glow)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 40px var(--accent-glow)}
+  .btn-ghost{border:1px solid var(--line);color:var(--text);background:rgba(155,168,171,.04)}
+  .btn-ghost:hover{border-color:var(--accent-soft);background:rgba(155,168,171,.1)}
+  .hero-stats{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--line)}
+  .stat{padding:20px 36px 0 0;margin-right:36px}
+  .stat b{font-family:'Syne',sans-serif;font-size:24px;font-weight:700;display:block;color:var(--text)}
+  .stat span{font-size:13px;color:var(--muted)}
+
+  /* ---------- Scroll progress bar ---------- */
+  #scroll-bar{
+    position:fixed;top:0;left:0;right:0;z-index:52;height:3px;
+    background:linear-gradient(90deg,#9BA8AB,#CCD0CF);
+    transform:scaleX(0);transform-origin:left center;
+    pointer-events:none;
+  }
+
+  /* ---------- Nav active link ---------- */
+  .nav-links a.active{color:var(--accent-soft);background:rgba(155,168,171,.14)}
+
+  /* ---------- Reveal on scroll (staggered) ---------- */
+  .reveal{opacity:1;transform:none}
+  @media (prefers-reduced-motion: no-preference){
+    .reveal{
+      opacity:0;transform:translateY(24px);
+      transition:opacity .7s cubic-bezier(0.16,1,0.3,1) calc(var(--i,0) * 80ms),
+                 transform .7s cubic-bezier(0.16,1,0.3,1) calc(var(--i,0) * 80ms);
+    }
+    .reveal.in{opacity:1;transform:none}
+
+    /* Pill cascade within each revealed skill-group */
+    .skill-group .pill{
+      opacity:0;transform:translateY(10px);
+      transition:opacity .4s cubic-bezier(0.16,1,0.3,1) calc(var(--i,0) * 45ms + 150ms),
+                 transform .4s cubic-bezier(0.16,1,0.3,1) calc(var(--i,0) * 45ms + 150ms);
+    }
+    .skill-group.in .pill{opacity:1;transform:none}
+
+    /* Parallax elements */
+    .orb,.hero-grid{will-change:transform}
+  }
+
+  /* ---------- Live app ---------- */
+  .browser{
+    border:1px solid var(--line);border-radius:var(--radius);
+    background:var(--bg-raised);
+    box-shadow:0 30px 80px rgba(6,20,27,.55), 0 0 60px rgba(155,168,171,.12);
+    overflow:hidden;
+  }
+  .browser-bar{
+    display:flex;align-items:center;gap:14px;
+    padding:12px 16px;border-bottom:1px solid var(--line);
+    background:rgba(155,168,171,.05);
+  }
+  .lights{display:flex;gap:8px;flex-shrink:0}
+  .lights i{width:12px;height:12px;border-radius:50%}
+  .lights i:nth-child(1){background:#FF5F57}
+  .lights i:nth-child(2){background:#FEBC2E}
+  .lights i:nth-child(3){background:#28C840}
+  .url-bar{
+    flex:1;display:flex;align-items:center;gap:8px;
+    background:rgba(6,20,27,.4);border:1px solid var(--line);
+    border-radius:999px;padding:7px 16px;
+    font-size:13px;color:var(--muted);min-width:0;
+  }
+  .url-bar .lock{color:#34D399;flex-shrink:0}
+  .url-bar span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .open-link{
+    flex-shrink:0;font-size:13px;font-weight:600;color:var(--accent-soft);
+    padding:6px 12px;border-radius:999px;border:1px solid rgba(155,168,171,.4);
+    transition:background .2s;white-space:nowrap;
+  }
+  .open-link:hover{background:rgba(155,168,171,.15)}
+  /* ---------- Demo video window ---------- */
+  .demo-intro{margin-top:104px}
+  .video-window{margin-top:0}
+  .video-title{
+    flex:1;display:flex;align-items:center;gap:8px;
+    background:rgba(6,20,27,.4);border:1px solid var(--line);
+    border-radius:999px;padding:7px 16px;
+    font-size:13px;color:var(--muted);min-width:0;
+  }
+  .video-title svg{color:var(--accent);flex-shrink:0}
+  .video-title span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .vid-btn{
+    flex-shrink:0;font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+    color:var(--accent-soft);background:transparent;
+    padding:6px 12px;border-radius:999px;border:1px solid rgba(155,168,171,.4);
+    transition:background .2s;white-space:nowrap;
+    display:inline-flex;align-items:center;gap:6px;
+  }
+  .vid-btn:hover{background:rgba(155,168,171,.15)}
+  .video-stage{
+    position:relative;background:#000;line-height:0;
+    cursor:pointer;
+  }
+  .video-stage video{width:100%;height:auto;display:block}
+  .video-stage:fullscreen{display:flex;align-items:center;justify-content:center}
+  .video-stage:fullscreen video{height:100vh;width:auto;max-width:100vw}
+  .video-overlay{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    background:rgba(6,20,27,.34);border:0;cursor:pointer;padding:0;
+    opacity:0;transition:opacity .25s;
+  }
+  .video-overlay.show{opacity:1}
+  .video-overlay span{
+    width:74px;height:74px;border-radius:50%;
+    background:var(--accent);color:var(--on-accent);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 0 34px var(--accent-glow);
+  }
+  /* Seek bar: an invisible range input sits over painted layers, so the
+     styling is fully ours while drag, click and keyboard stay native. */
+  .video-controls{
+    display:flex;align-items:center;gap:13px;
+    padding:11px 16px;border-top:1px solid var(--line);
+    background:rgba(155,168,171,.05);
+  }
+  .vid-time{
+    font-size:12px;font-variant-numeric:tabular-nums;
+    color:var(--muted);flex-shrink:0;min-width:34px;
+  }
+  .vid-time.dur{text-align:right}
+  .seek-wrap{position:relative;flex:1;height:22px;display:flex;align-items:center;min-width:0}
+  .seek-track,.seek-buffer,.seek-played{
+    position:absolute;left:0;height:5px;border-radius:99px;pointer-events:none;
+  }
+  .seek-track{width:100%;background:rgba(155,168,171,.16)}
+  .seek-buffer{width:0;background:rgba(155,168,171,.3)}
+  .seek-played{width:0;background:var(--accent)}
+  .seek-thumb{
+    position:absolute;left:0;width:13px;height:13px;border-radius:50%;
+    background:var(--accent);pointer-events:none;transform:translateX(-50%);
+    box-shadow:0 0 10px var(--accent-glow);
+  }
+  .vid-seek{
+    position:absolute;left:0;width:100%;height:22px;margin:0;
+    -webkit-appearance:none;appearance:none;background:transparent;cursor:pointer;
+  }
+  .vid-seek::-webkit-slider-thumb{
+    -webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:transparent;
+  }
+  .vid-seek::-moz-range-thumb{width:20px;height:20px;border:0;border-radius:50%;background:transparent}
+  .vid-seek:focus{outline:none}
+  .vid-seek:focus-visible ~ .seek-thumb{
+    box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--accent-soft);
+  }
+
+  .video-hint{
+    display:flex;flex-wrap:wrap;gap:8px 18px;
+    padding:12px 16px;border-top:1px solid var(--line);
+    background:rgba(155,168,171,.05);
+    font-size:12.5px;color:var(--muted);
+  }
+  @media (max-width:640px){
+    .video-title{display:none}
+    .vid-btn{padding:6px 10px}
+  }
+
+  .browser-body{
+    position:relative;height:520px;
+    background:radial-gradient(ellipse 80% 60% at 50% 0%, rgba(155,168,171,.18), transparent 65%), #06141B;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;
+  }
+  .app-preview{display:flex;flex-direction:column;align-items:center;gap:28px;padding:40px 28px;text-align:center}
+  .app-icon{
+    width:72px;height:72px;border-radius:20px;
+    background:linear-gradient(135deg,var(--accent-deep),var(--accent) 55%,var(--accent-soft));
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 0 40px rgba(155,168,171,.5);font-size:32px;
+  }
+  .app-preview h3{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:var(--text)}
+  .app-preview p{color:var(--muted);font-size:15px;max-width:460px;line-height:1.6}
+  .app-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+  .badge{
+    font-size:12px;font-weight:600;letter-spacing:.06em;
+    color:var(--accent-soft);background:rgba(155,168,171,.12);
+    border:1px solid rgba(155,168,171,.35);padding:5px 13px;border-radius:999px;
+  }
+  .app-cta{
+    display:inline-flex;align-items:center;gap:9px;
+    font-size:15px;font-weight:700;color:var(--on-accent);
+    background:var(--accent);padding:14px 30px;border-radius:999px;
+    box-shadow:0 0 30px var(--accent-glow);
+    transition:transform .2s,box-shadow .2s;
+  }
+  .app-cta:hover{transform:translateY(-2px);box-shadow:0 0 44px var(--accent-glow)}
+  .app-live-dot{width:8px;height:8px;border-radius:50%;background:#06141B;box-shadow:0 0 0 3px rgba(6,20,27,.18)}
+  @media (max-width:640px){.browser-body{height:auto;padding:20px 0}}
+
+  /* ---------- Projects ---------- */
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  @media (max-width:760px){.cards{grid-template-columns:1fr}}
+  .card{
+    position:relative;display:flex;flex-direction:column;gap:14px;
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px;transition:transform .25s,border-color .25s,box-shadow .25s;
+  }
+  .card:hover{
+    transform:translateY(-4px);border-color:rgba(155,168,171,.55);
+    box-shadow:0 18px 50px rgba(6,20,27,.45), 0 0 34px rgba(155,168,171,.14);
+  }
+  .tag{
+    align-self:flex-start;font-size:12px;font-weight:600;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--accent-soft);
+    background:rgba(155,168,171,.12);border:1px solid rgba(155,168,171,.35);
+    padding:5px 12px;border-radius:999px;
+  }
+  .card h3{font-size:21px;font-weight:700}
+  .card p{font-size:14.5px;color:var(--muted);flex:1}
+  .card .doc-link{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:14px;font-weight:600;color:var(--accent-soft);
+  }
+  .card .doc-link svg{transition:transform .2s}
+  .card:hover .doc-link svg{transform:translate(3px,-3px)}
+  .card .doc-link::after{content:"";position:absolute;inset:0;border-radius:var(--radius)}
+
+  /* ---------- Skills ---------- */
+  .skill-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media (max-width:900px){.skill-groups{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:600px){.skill-groups{grid-template-columns:1fr}}
+  .skill-group{
+    background:var(--card);border:1px solid var(--line);
+    border-radius:var(--radius);padding:24px;
+  }
+  .skill-group h3{
+    font-size:16px;font-weight:700;margin-bottom:16px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .skill-group h3::before{
+    content:"";width:8px;height:8px;border-radius:2px;
+    background:var(--accent);box-shadow:0 0 10px var(--accent-glow);
+  }
+  .pills{display:flex;flex-wrap:wrap;gap:8px}
+  .pill{
+    font-size:13px;font-weight:500;color:var(--text);
+    background:rgba(155,168,171,.06);border:1px solid var(--line);
+    padding:6px 13px;border-radius:999px;transition:border-color .2s,background .2s;
+  }
+  .pill:hover{border-color:var(--accent-soft);background:rgba(155,168,171,.12)}
+
+  /* ---------- Contact ---------- */
+  .contact-box{
+    position:relative;text-align:center;
+    border:1px solid rgba(155,168,171,.35);border-radius:24px;
+    padding:72px 28px;overflow:hidden;
+    background:
+      radial-gradient(ellipse 60% 80% at 50% 0%, rgba(155,168,171,.18), transparent 65%),
+      var(--card);
+  }
+  .contact-box h2{font-size:clamp(28px,4.5vw,42px);font-weight:800;margin-bottom:14px}
+  .contact-box p{color:var(--muted);max-width:520px;margin:0 auto 34px}
+  .email-link{
+    font-family:'Syne',sans-serif;font-size:clamp(17px,3vw,24px);font-weight:700;
+    color:var(--accent-soft);border-bottom:2px solid rgba(155,168,171,.5);
+    padding-bottom:3px;transition:color .2s,border-color .2s;word-break:break-all;
+  }
+  .email-link:hover{color:var(--accent-soft);border-color:var(--accent-soft)}
+  .contact-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:38px}
+
+  footer{border-top:1px solid var(--line);padding:44px 24px 36px;color:var(--muted);font-size:13.5px}
+  footer b{color:var(--text);font-weight:600}
+  .footer-inner{
+    max-width:var(--maxw);margin:0 auto;
+    display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;
+  }
+  .footer-links{display:flex;flex-wrap:wrap;gap:20px}
+  .footer-links a{color:var(--muted);transition:color .2s}
+  .footer-links a:hover{color:var(--accent-soft)}
+  .back-top{
+    display:inline-flex;align-items:center;gap:7px;
+    color:var(--accent-soft);font-weight:600;transition:color .2s;
+  }
+  .back-top:hover{color:var(--accent-soft)}
+  @media (max-width:640px){.footer-inner{flex-direction:column;text-align:center;justify-content:center}}
+
+  /* ---------- Phone scaling ----------
+     Long words (the name, headings) must never be able to outrun a narrow
+     viewport — body{overflow-x:hidden} would silently clip them instead. */
+  h1,h2,h3,p,li,a,span{overflow-wrap:break-word}
+  .hero h1{overflow-wrap:break-word;hyphens:none}
+
+  @media (max-width:640px){
+    section{padding:70px 0}
+    .hero{padding:120px 0 70px;min-height:auto}
+    .hero-actions{margin-bottom:40px}
+    .section-sub{margin-bottom:34px}
+    .stats{gap:26px}
+    .demo-intro{margin-top:64px}
+  }
+
+  @media (max-width:430px){
+    .wrap,.nav-inner{padding-left:18px;padding-right:18px}
+    /* floor low enough that "Yogabalaji R R" still fits a 320px screen */
+    .hero h1{font-size:clamp(31px,10vw,82px)}
+    .section-title{font-size:clamp(25px,7.4vw,44px)}
+    .hero p.bio{font-size:15.5px}
+    section{padding:58px 0}
+    .video-hint{font-size:11.5px;gap:6px 12px;padding:10px 13px}
+    .vid-btn{font-size:12px;padding:5px 10px}
+    .browser-bar{gap:10px;padding:10px 13px}
+    .lights i{width:10px;height:10px}
+  }
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div id="scroll-bar" aria-hidden="true"></div>
+  <div class="nav-inner">
+    <a class="logo" href="#top">yoga<span>balaji</span>.</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#live">Live App</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="nav-cta" href="mailto:yogabalajirr@gmail.com">Get in touch</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="orb" aria-hidden="true"></div>
+  <div class="orb small" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="wrap">
+    <span id="about"></span>
+    <h1>Hi, I'm <span class="accent">Yogabalaji&nbsp;R&nbsp;R</span></h1>
+    <p class="type-line" aria-live="polite"><span id="typewriter">Aspiring Product Manager</span><span class="caret" aria-hidden="true"></span></p>
+    <p class="bio">
+      I'm a Computer Science graduate with a <strong>software engineering background</strong> who learns product
+      by shipping it. I built and launched <strong>WeeFit</strong> — a live, gamified calorie tracker — end to end:
+      from PRD and MVP scoping to user testing with early adopters and data-informed iteration. I write PRDs,
+      prioritize ruthlessly, and care more about user outcomes than feature counts.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#live">See my live product
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="#projects">Read my PRDs</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>1 live product</b><span>weefit.online — built &amp; shipped solo</span></div>
+      <div class="stat"><b>5+ documents</b><span>PRDs, case studies &amp; research</span></div>
+      <div class="stat"><b>5 early users</b><span>tested, interviewed &amp; iterated with</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= LIVE APP ================= -->
+<section id="live">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Proof of shipping</span>
+      <h2 class="section-title">WeeFit, live in production</h2>
+      <p class="section-sub">
+        A social, gamified calorie &amp; nutrition tracker with an Indian-cuisine-heavy food database,
+        a points-and-streaks loop, and an offline-first architecture. This isn't a mockup — it's the
+        real app, running right here.
+      </p>
+    </div>
+    <div class="browser reveal">
+      <div class="browser-bar">
+        <div class="lights" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="url-bar">
+          <svg class="lock" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <span>https://weefits-ozzz.vercel.app</span>
+        </div>
+        <a class="open-link" href="https://weefits-ozzz.vercel.app" target="_blank" rel="noopener">Open ↗</a>
+      </div>
+      <div class="browser-body">
+        <div class="app-preview">
+          <div class="app-icon">🥗</div>
+          <div>
+            <h3>WeeFit</h3>
+            <p style="margin-top:8px">A social, gamified calorie &amp; nutrition tracker with an Indian-cuisine-heavy food database, points &amp; streaks, and offline-first architecture.</p>
+          </div>
+          <div class="app-badges">
+            <span class="badge">Live in Production</span>
+            <span class="badge">Offline-First</span>
+            <span class="badge">Gamified</span>
+            <span class="badge">Indian Food DB</span>
+          </div>
+          <a class="app-cta" href="https://weefits-ozzz.vercel.app" target="_blank" rel="noopener">
+            <span class="app-live-dot"></span>
+            Open WeeFit ↗
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal demo-intro">
+      <span class="eyebrow">Product walkthrough</span>
+      <h2 class="section-title">TicketFlow, the MVP in motion</h2>
+      <p class="section-sub">
+        A support ticketing tool for teams of 5–50 agents — capture, triage, respond, resolve —
+        with SLA timers, auto-routing, a no-login customer portal, and an AI assist layer.
+        This is the built MVP, recorded end to end.
+      </p>
+    </div>
+
+    <div class="browser video-window reveal">
+      <div class="browser-bar">
+        <div class="lights" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="video-title">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          <span>TicketFlow — product walkthrough</span>
+        </div>
+        <button class="vid-btn" id="vidToggle" type="button" aria-controls="tfVideo">Pause</button>
+        <button class="vid-btn" id="vidFull" type="button">Fullscreen ⛶</button>
+      </div>
+
+      <div class="video-stage" id="vidStage">
+        <video id="tfVideo" muted loop playsinline preload="metadata"
+               aria-label="TicketFlow product walkthrough demo">
+          <source src="/TicketFlow_Walkthrough.mp4" type="video/mp4">
+          Your browser can’t play embedded video —
+          <a href="/TicketFlow_Walkthrough.mp4">download the walkthrough</a> instead.
+        </video>
+        <button class="video-overlay" id="vidOverlay" type="button" aria-label="Play or pause the walkthrough">
+          <span>
+            <svg id="vidOverlayIcon" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+        </button>
+      </div>
+
+      <div class="video-controls">
+        <span class="vid-time" id="vidNow">0:00</span>
+        <div class="seek-wrap">
+          <div class="seek-track"></div>
+          <div class="seek-buffer" id="vidBuffer"></div>
+          <div class="seek-played" id="vidPlayed"></div>
+          <input class="vid-seek" id="vidSeek" type="range" min="0" max="1000" step="1" value="0"
+                 aria-label="Seek through the walkthrough">
+          <div class="seek-thumb" id="vidThumb"></div>
+        </div>
+        <span class="vid-time dur" id="vidDur">0:00</span>
+      </div>
+
+      <div class="video-hint">
+        <span>Click the video to pause or resume</span>
+        <span>Drag the bar to skip to any moment</span>
+        <span>Muted by design — it’s a silent screen capture</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Product work</span>
+      <h2 class="section-title">Projects &amp; documents</h2>
+      <p class="section-sub">
+        PRDs, case studies and research — written to sharpen problem framing, ruthless prioritization,
+        and honest metrics. Each one opens the full document.
+      </p>
+    </div>
+    <div class="cards">
+
+      <article class="card reveal">
+        <span class="tag">Strategy → PRD</span>
+        <h3>Live EV Charger App for India</h3>
+        <p>
+          A pitch PRD for an app that tells India's EV drivers whether a charger actually works — not
+          just where it is. Frames the opportunity (10M EVs, roughly 18% of chargers non-operational),
+          designs a cross-operator reliability layer that blends operator feeds with one-tap driver
+          check-ins, models four revenue streams, and sets explicit kill criteria at a six-week gate.
+        </p>
+        <a class="doc-link" href="/EV_Charging_Reliability_PRD.pdf" target="_blank" rel="noopener">
+          Read the PRD
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card reveal">
+        <span class="tag">PRD</span>
+        <h3>WeeFit — Product Requirements Document</h3>
+        <p>
+          Reverse-engineered a structured PRD from my own shipped app: problem framing, outcome-based goals,
+          explicit non-goals, and P0/P1/P2 prioritization. Designed the points → streaks → leaderboard retention
+          loop, separated leading vs. lagging metrics, and surfaced real risks (client-tamperable points,
+          offline↔online sync, GDPR deletion) before launch.
+        </p>
+        <a class="doc-link" href="/WeeFit_PRD.pdf" target="_blank" rel="noopener">
+          Read the PRD
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card reveal">
+        <span class="tag">PRD</span>
+        <h3>TicketFlow — Support Ticketing for Small Teams</h3>
+        <p>
+          A lightweight customer-support ticketing tool for 5–50 agent teams, positioned as a faster, cheaper
+          alternative to Zendesk and Freshdesk. Covers market positioning, a tightly scoped MVP
+          (10 features shipped, 12 deliberately deferred to v2), success metrics, risk analysis, and clear non-goals.
+        </p>
+        <a class="doc-link" href="/TicketFlow_PRD.pdf" target="_blank" rel="noopener">
+          Read the PRD
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card reveal">
+        <span class="tag">Case Study</span>
+        <h3>Offline-First Architecture for WeeFit</h3>
+        <p>
+          Users were losing meal logs to spotty gym and travel connectivity, so I designed a dual-mode
+          Supabase + localStorage architecture with an automatic sync queue. Result: meal logging works with
+          100% reliability regardless of connection, completes in under 30 seconds, and removed network
+          latency as a friction point entirely.
+        </p>
+        <a class="doc-link" href="/WeeFit_Offline_First_Case_Study.pdf" target="_blank" rel="noopener">
+          Read the case study
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <article class="card reveal">
+        <span class="tag">Research → PRD</span>
+        <h3>Loan Default Risk Analysis</h3>
+        <p>
+          A data analysis project in Python (Pandas) and SQL: cleaning messy lending data, engineering
+          features, and identifying the strongest predictors of default risk. I then turned that analysis
+          into a product spec — a PRD for a borrower risk-scoring feature, showing how I move from data to
+          a scoped, explainable product decision.
+        </p>
+        <a class="doc-link" href="/loan-default-risk-prd.pdf" target="_blank" rel="noopener">
+          Read the PRD
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Toolkit</span>
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">
+        A product core backed by a real engineering foundation — I can write the PRD, prototype it,
+        and pull the data to check whether it worked.
+      </p>
+    </div>
+    <div class="skill-groups">
+
+      <div class="skill-group reveal">
+        <h3>Product Strategy</h3>
+        <div class="pills">
+          <span class="pill">PRD writing</span>
+          <span class="pill">MVP scoping</span>
+          <span class="pill">P0/P1/P2 prioritization</span>
+          <span class="pill">North-star metrics</span>
+          <span class="pill">Non-goals &amp; scope discipline</span>
+          <span class="pill">Gamification &amp; retention design</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3>Research &amp; Discovery</h3>
+        <div class="pills">
+          <span class="pill">User testing</span>
+          <span class="pill">Feedback synthesis</span>
+          <span class="pill">Competitive analysis</span>
+          <span class="pill">Problem framing</span>
+          <span class="pill">Risk surfacing</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3>Analytics &amp; Data</h3>
+        <div class="pills">
+          <span class="pill">Python (Pandas)</span>
+          <span class="pill">SQL</span>
+          <span class="pill">Leading vs. lagging metrics</span>
+          <span class="pill">Power BI</span>
+          <span class="pill">Excel</span>
+          <span class="pill">PageSpeed &amp; web analytics</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3>Tools</h3>
+        <div class="pills">
+          <span class="pill">Notion</span>
+          <span class="pill">Figma</span>
+          <span class="pill">GitHub</span>
+          <span class="pill">n8n automation</span>
+          <span class="pill">Claude (AI-assisted prototyping)</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3>Soft Skills</h3>
+        <div class="pills">
+          <span class="pill">Clear written communication</span>
+          <span class="pill">Self-directed execution</span>
+          <span class="pill">Team leadership (basketball captain)</span>
+          <span class="pill">Stakeholder coordination</span>
+          <span class="pill">Honest, growth-minded reflection</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3>Technical</h3>
+        <div class="pills">
+          <span class="pill">React</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">HTML/CSS</span>
+          <span class="pill">Supabase</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Offline-first architecture</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box reveal">
+      <span class="eyebrow" style="justify-content:center;display:flex">Contact</span>
+      <h2>Let's build something that matters.</h2>
+      <p>
+        I'm looking for my first Product Manager role — a team where I can keep doing what I already do:
+        talk to users, write sharp docs, and ship.
+      </p>
+      <a class="email-link" href="mailto:yogabalajirr@gmail.com">yogabalajirr@gmail.com</a>
+      <div class="contact-row">
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/yogabalaji-rr-214215319" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="https://github.com/yogabalajirr/PRDs" target="_blank" rel="noopener">PRD Portfolio ↗</a>
+        <a class="btn btn-ghost" href="/Yogabalaji_Resume_PM.pdf" target="_blank" rel="noopener">View Resume ↗</a>
+        <a class="btn btn-primary" href="/Yogabalaji_Resume_PM.pdf" download="Yogabalaji_R_R_Resume.pdf">Download Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div><b>Yogabalaji R R</b> · Aspiring Product Manager<br>Built by hand, the same way I build products.</div>
+    <div class="footer-links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="https://weefits-ozzz.vercel.app" target="_blank" rel="noopener">WeeFit</a>
+      <a href="mailto:yogabalajirr@gmail.com">Email</a>
+    </div>
+    <a class="back-top" href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var isMobile = window.innerWidth < 640;
+
+  /* ── 1. Scroll progress bar + parallax (single rAF loop) ── */
+  var scrollBar = document.getElementById('scroll-bar');
+  var orb       = document.querySelector('.orb:not(.small)');
+  var orbSmall  = document.querySelector('.orb.small');
+  var heroGrid  = document.querySelector('.hero-grid');
+  var rafPending = false;
+
+  function updateScroll() {
+    rafPending = false;
+    var sy   = window.pageYOffset;
+    var docH = document.documentElement.scrollHeight - window.innerHeight;
+    scrollBar.style.transform = 'scaleX(' + (docH > 0 ? sy / docH : 0) + ')';
+    if (!reduced && !isMobile) {
+      orb.style.transform      = 'translateY(' + (sy * 0.12) + 'px)';
+      orbSmall.style.transform = 'translateY(' + (sy * 0.08) + 'px)';
+      heroGrid.style.transform = 'translateY(' + (sy * 0.06) + 'px)';
+    }
+  }
+  window.addEventListener('scroll', function () {
+    if (rafPending) return;
+    rafPending = true;
+    requestAnimationFrame(updateScroll);
+  }, { passive: true });
+
+  /* ── 2. Active nav highlighting ── */
+  var navLinks = document.querySelectorAll('.nav-links a');
+  function setActive(href) {
+    navLinks.forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('href') === href);
+    });
+  }
+  var sectionMap = [
+    { el: document.querySelector('header.hero'), href: '#about'    },
+    { el: document.getElementById('live'),       href: '#live'     },
+    { el: document.getElementById('projects'),   href: '#projects' },
+    { el: document.getElementById('skills'),     href: '#skills'   },
+    { el: document.getElementById('contact'),    href: '#contact'  }
+  ];
+  if ('IntersectionObserver' in window) {
+    var navObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var match = sectionMap.filter(function (s) { return s.el === entry.target; })[0];
+        if (match) setActive(match.href);
+      });
+    }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+    sectionMap.forEach(function (s) { if (s.el) navObs.observe(s.el); });
+  }
+  setActive('#about');
+
+  /* ── 3. Hero entrance on load ── */
+  var heroSelectors = [
+    '.hero h1', '.hero .type-line',
+    '.hero .bio', '.hero-actions', '.hero-stats'
+  ];
+  if (!reduced) {
+    heroSelectors.forEach(function (sel) {
+      var el = document.querySelector(sel);
+      if (!el) return;
+      el.style.cssText += ';opacity:0;transform:translateY(22px);' +
+        'transition:opacity .7s cubic-bezier(0.16,1,0.3,1),transform .7s cubic-bezier(0.16,1,0.3,1)';
+    });
+    setTimeout(function () {
+      heroSelectors.forEach(function (sel, i) {
+        setTimeout(function () {
+          var el = document.querySelector(sel);
+          if (el) { el.style.opacity = '1'; el.style.transform = 'none'; }
+        }, i * 90);
+      });
+    }, 150);
+  }
+
+  /* ── 4. Count-up for hero stats ── */
+  document.querySelectorAll('.stat b').forEach(function (el) {
+    var raw = el.textContent.trim();
+    var m   = raw.match(/^(\d+)(\+?)(.*)$/);
+    if (!m) return;
+    var target = parseInt(m[1], 10), plus = m[2], rest = m[3];
+    if (reduced) { el.textContent = target + plus + rest; return; }
+    el.textContent = '0' + plus + rest;
+    setTimeout(function () {
+      var t0 = null, dur = 1200;
+      requestAnimationFrame(function step(ts) {
+        if (!t0) t0 = ts;
+        var p    = Math.min((ts - t0) / dur, 1);
+        var ease = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(ease * target) + plus + rest;
+        if (p < 1) requestAnimationFrame(step);
+      });
+    }, heroSelectors.length * 90 + 350);
+  });
+
+  /* ── 5. Staggered reveals ── */
+  document.querySelectorAll('.cards .card').forEach(function (el, i) {
+    el.style.setProperty('--i', i);
+  });
+  document.querySelectorAll('.skill-groups .skill-group').forEach(function (el, i) {
+    el.style.setProperty('--i', i);
+  });
+  document.querySelectorAll('.skill-group').forEach(function (group) {
+    group.querySelectorAll('.pill').forEach(function (pill, i) {
+      pill.style.setProperty('--i', i);
+    });
+  });
+
+  var revealItems = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    revealItems.forEach(function (el) { el.classList.add('in'); });
+  } else {
+    var revObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          revObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealItems.forEach(function (el) { revObs.observe(el); });
+  }
+
+  /* ── 6. Typewriter (preserved, reduced-motion safe) ── */
+  (function () {
+    var phrases = [
+      'Aspiring Product Manager', 'User-Obsessed Builder',
+      'Data-Informed Strategist', 'Shipping Things That Matter'
+    ];
+    var tw = document.getElementById('typewriter');
+    if (reduced) { tw.textContent = phrases[0]; return; }
+    var pi = 0, ci = phrases[0].length, deleting = false;
+    function tick() {
+      var phrase = phrases[pi];
+      tw.textContent = phrase.slice(0, ci);
+      var delay;
+      if (!deleting) {
+        if (ci < phrase.length) { ci++; delay = 55 + Math.random() * 45; }
+        else { deleting = true; delay = 1900; }
+      } else {
+        if (ci > 0) { ci--; delay = 30; }
+        else { deleting = false; pi = (pi + 1) % phrases.length; delay = 420; }
+      }
+      setTimeout(tick, delay);
+    }
+    setTimeout(tick, 1700);
+  })();
+
+  /* ── 7. Demo video: autoplay, click to pause/resume, fullscreen ── */
+  (function () {
+    var v = document.getElementById('tfVideo');
+    if (!v) return;
+    var stage   = document.getElementById('vidStage'),
+        overlay = document.getElementById('vidOverlay'),
+        iconPath = document.querySelector('#vidOverlayIcon path'),
+        toggle  = document.getElementById('vidToggle'),
+        full    = document.getElementById('vidFull');
+
+    var PLAY  = 'M8 5v14l11-7z',
+        PAUSE = 'M6 5h4v14H6zm8 0h4v14h-4z';
+
+    function paint() {
+      var playing = !v.paused && !v.ended;
+      iconPath.setAttribute('d', playing ? PAUSE : PLAY);
+      toggle.textContent = playing ? 'Pause' : 'Play';
+      toggle.setAttribute('aria-label', playing ? 'Pause walkthrough' : 'Play walkthrough');
+      overlay.classList.toggle('show', !playing);
+    }
+
+    function flash() {            /* brief overlay pulse on interaction */
+      overlay.classList.add('show');
+      clearTimeout(overlay._t);
+      overlay._t = setTimeout(paint, 620);
+    }
+
+    var userPaused = false;       /* set only by an explicit click */
+
+    function tryPlay() {
+      var p = v.play();
+      if (p && p.catch) p.catch(function () { paint(); });
+    }
+
+    function togglePlay() {
+      if (v.paused || v.ended) {
+        userPaused = false;
+        tryPlay();
+      } else {
+        userPaused = true;
+        v.pause();
+      }
+      flash();
+    }
+
+    overlay.addEventListener('click', togglePlay);
+    toggle.addEventListener('click', togglePlay);
+    v.addEventListener('play', paint);
+    v.addEventListener('pause', paint);
+
+    /* ---- seek bar ---- */
+    var seek   = document.getElementById('vidSeek'),
+        played = document.getElementById('vidPlayed'),
+        buffed = document.getElementById('vidBuffer'),
+        thumb  = document.getElementById('vidThumb'),
+        nowEl  = document.getElementById('vidNow'),
+        durEl  = document.getElementById('vidDur'),
+        scrubbing = false;
+
+    function fmt(s) {
+      s = Math.max(0, Math.floor(s || 0));
+      return Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2);
+    }
+
+    function renderSeek() {
+      var d = v.duration;
+      if (!isFinite(d) || d <= 0) return;
+      var frac = scrubbing ? (seek.value / 1000) : (v.currentTime / d);
+      if (!scrubbing) seek.value = Math.round(frac * 1000);
+      var pct = Math.min(100, Math.max(0, frac * 100));
+      played.style.width = pct + '%';
+      thumb.style.left  = pct + '%';
+      nowEl.textContent = fmt(frac * d);
+      if (v.buffered && v.buffered.length) {
+        buffed.style.width =
+          Math.min(100, (v.buffered.end(v.buffered.length - 1) / d) * 100) + '%';
+      }
+    }
+
+    function commitSeek() {
+      var d = v.duration;
+      if (isFinite(d) && d > 0) v.currentTime = (seek.value / 1000) * d;
+    }
+
+    v.addEventListener('loadedmetadata', function () {
+      durEl.textContent = fmt(v.duration);
+      renderSeek();
+    });
+    v.addEventListener('timeupdate', renderSeek);
+    v.addEventListener('progress', renderSeek);
+
+    /* Guard the drag: writing .value mid-gesture can break the grab. */
+    seek.addEventListener('pointerdown', function () { scrubbing = true; });
+    seek.addEventListener('input', function () { commitSeek(); renderSeek(); });
+    seek.addEventListener('change', function () { scrubbing = false; renderSeek(); });
+    ['pointerup', 'pointercancel', 'blur'].forEach(function (ev) {
+      seek.addEventListener(ev, function () { scrubbing = false; });
+    });
+
+    if (v.readyState >= 1) { durEl.textContent = fmt(v.duration); renderSeek(); }
+
+    full.addEventListener('click', function () {
+      var d = document;
+      if (d.fullscreenElement || d.webkitFullscreenElement) {
+        (d.exitFullscreen || d.webkitExitFullscreen).call(d);
+      } else if (stage.requestFullscreen) {
+        stage.requestFullscreen();
+      } else if (stage.webkitRequestFullscreen) {
+        stage.webkitRequestFullscreen();
+      } else if (v.webkitEnterFullscreen) {
+        v.webkitEnterFullscreen();          /* iOS Safari: video element only */
+      }
+    });
+
+    /* Autoplay while the window is on screen; pause when it scrolls away.
+       Plain rect maths rather than IntersectionObserver — it behaves
+       identically in every browser and can't silently no-op.
+       Muted playback + an always-present pause control keeps this
+       WCAG 2.2.2-safe. */
+    function onScreen() {
+      var r = stage.getBoundingClientRect(), h = window.innerHeight || 0;
+      return r.bottom > h * 0.15 && r.top < h * 0.85;
+    }
+
+    function sync() {
+      if (userPaused) return;                /* never fight an explicit pause */
+      if (onScreen()) {
+        if (v.paused) tryPlay();
+      } else if (!v.paused) {
+        v.pause();                           /* don't decode off-screen */
+      }
+    }
+
+    window.addEventListener('scroll', sync, { passive: true });
+    window.addEventListener('resize', sync, { passive: true });
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) { if (!v.paused) v.pause(); } else { sync(); }
+    });
+    setInterval(sync, 400);   /* cheap backstop: one rect read, and it keeps
+                                 working where scroll events are throttled */
+
+    sync();
+    paint();
+  })();
+})();
+</script>
+
+</body>
+</html>
