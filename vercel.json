@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/yogabalaji-portfolio.html" },
+    { "source": "/vocab-voice-agent", "destination": "/vocab-voice-agent.html" }
+  ]
+}
