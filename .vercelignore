@@ -1,0 +1,11 @@
+# Private / internal files: never publish these
+.claude
+pm_internship_cold_messages.md
+pm_internship_startups_blr_chennai.csv
+claude_usage_watch.py
+install_claude_usage_autostart.sh
+scroll-animations-prompt.md
+compass_artifact_*.md
+recolor.js
+ticketflow-poster
+weefit-video
