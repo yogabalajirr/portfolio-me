@@ -2,7 +2,7 @@
 
 **Aspiring Product Manager** with a software engineering background — I learn product by shipping it.
 
-I'm a Computer Science graduate who writes PRDs, prioritizes ruthlessly, and cares more about user outcomes than feature counts. My approach: talk to users, write sharp docs, ship, and let data tell me what to do next.
+I'm a Computer Science graduate (B.Tech, SASTRA Deemed University, 2025) who writes PRDs, prioritizes ruthlessly, and cares more about user outcomes than feature counts. My approach: talk to users, write sharp docs, ship, and let data tell me what to do next.
 
 🔗 **[Full portfolio →](https://yogabalaji-portfolio.vercel.app)**
 
@@ -10,7 +10,7 @@ I'm a Computer Science graduate who writes PRDs, prioritizes ruthlessly, and car
 
 ### 🥗 Live Product: WeeFit
 A social, gamified calorie & nutrition tracker with an Indian-cuisine-heavy food database, a points-and-streaks retention loop, and offline-first architecture — built and shipped solo, end to end.
-- **Live app:** [weefit.online]([https://weefit.online](https://weefits-ozzz.vercel.app/dashboard))
+- **Live app:** [WeeFit](https://weefits-ozzz.vercel.app)
 - **PRD:** [WeeFit Product Requirements Document](https://yogabalaji-portfolio.vercel.app/PRDs/WeeFit-PRD.md)
 - **Case study:** [Offline-First Architecture for WeeFit](https://yogabalaji-portfolio.vercel.app/WeeFit_Offline_First_Case_Study.pdf)
 
@@ -30,7 +30,7 @@ A social, gamified calorie & nutrition tracker with an Indian-cuisine-heavy food
 ---
 
 ### 📫 Let's connect
-Looking for my first PM role — a team where I can keep talking to users, writing sharp docs, and shipping.
+Looking for a Product Management internship — a team where I can keep talking to users, writing sharp docs, and shipping.
 
 - ✉️ [yogabalajirr@gmail.com](mailto:yogabalajirr@gmail.com)
 - 🌐 [Portfolio](https://yogabalaji-portfolio.vercel.app)
