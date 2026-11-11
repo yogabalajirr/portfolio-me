@@ -2,7 +2,7 @@
 
 **Aspiring Product Manager** with a software engineering background — I learn product by shipping it.
 
-I'm a Computer Science graduate (B.Tech, SASTRA Deemed University, 2025) who writes PRDs, prioritizes ruthlessly, and cares more about user outcomes than feature counts. My approach: talk to users, write sharp docs, ship, and let data tell me what to do next.
+I'm a Computer Science graduate (B.Tech, SASTRA Deemed University, 2026) who writes PRDs, prioritizes ruthlessly, and cares more about user outcomes than feature counts. My approach: talk to users, write sharp docs, ship, and let data tell me what to do next.
 
 🔗 **[Full portfolio →](https://yogabalaji-portfolio.vercel.app)**
 
